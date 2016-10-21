@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="#c2dcec">
+
+        <ImageView
+            android:id="@+id/img_weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_weather_cloudy" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_temper"
+                style="@style/TextShadowTheme"
+                android:layout_gravity="bottom"
+                android:text="27"
+                android:textSize="84sp" />
+
+            <TextView
+                style="@style/TextShadowTheme"
+                android:layout_gravity="bottom"
+                android:text="℃"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
