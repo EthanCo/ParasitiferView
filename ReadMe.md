@@ -64,7 +64,15 @@ Add it in your root build.gradle at the end of repositories:
 
 	parasitifer.setAdapter(new WeatherAdapter(MainActivity.this, "59"));
 
+### 设置数据 ###
+
+	parasitifer.setData("20");
+
 ### 更新UI ###
 
-	parasitifer.setData("20");  
+	parasitifer.notifyDataSetChanged();  
+
+### 设置数据并更新UI ###
+
+	parasitifer.updateData("20");    
 
