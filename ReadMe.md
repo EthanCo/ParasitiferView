@@ -18,7 +18,21 @@ ParasitiferView类似于Fragment，但又比Fragment轻量级
 4. 小，很小。只有30个Method
 
 ## 添加依赖 ##
+### Step 1. Add the JitPack repository to your build file ###
+Add it in your root build.gradle at the end of repositories:  
 
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+
+### Step 2. Add the dependency ###
+
+	dependencies {
+	    compile 'com.github.EthanCo:ParasitiferView:1.0.0'
+	}
 
 ## 使用 ##
 
@@ -46,6 +60,11 @@ ParasitiferView类似于Fragment，但又比Fragment轻量级
 	    }
 	}
 
-### 在Activity中添加 ###
+### 进行关联 ###
 
-	parasitifer.setAdapter(new WeatherAdapter(MainActivity.this, "59"));  
+	parasitifer.setAdapter(new WeatherAdapter(MainActivity.this, "59"));
+
+### 更新UI ###
+
+	parasitifer.setData("20");  
+
