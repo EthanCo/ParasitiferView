@@ -15,7 +15,7 @@ ParasitiferView类似于Fragment，但又比Fragment轻量级
 2. 没有生命周期，比起Fragment，ParasitiferView更像是Activity里的一个View
 2. ParasitiferView只负责UI的更新，更符合单一职责原则  
 3. 各个Parasyte(Adapter)之间，无论是怎样的布局方式、数据类型，都可随意切换 
-4. 小，很小。只有30个Method
+4. 小，很小。只有2个类10个Method
 
 ## 添加依赖 ##
 ### Step 1. Add the JitPack repository to your build file ###
